@@ -1,127 +1,65 @@
-# Ferocious Labs Website
+# 🦀 Ferocious Labs
 
-Edge AI solutions for higher education. Built with FastHTML and hosted on GitHub Pages.
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fferociouslabs.com)](https://ferociouslabs.com)
+[![Made with FastHTML](https://img.shields.io/badge/Made%20with-FastHTML-blue)](https://github.com/fastai/fasthtml)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-## Project Structure
-```
-ferociouslabs/
-├── .python-version     # Pyenv version file
-├── .gitignore         # Git ignore file
-├── README.md          # This file
-├── requirements.txt   # Python dependencies
-├── main.py           # Main FastHTML application
-└── static/           # Static assets (images, etc.)
-    └── images/       # Image storage
-```
+> Education and training on the use of AI in the professional world 
 
-## Development Setup
+## 🎯 Mission
 
-1. Install pyenv if you haven't already:
+Help educate institutions on the use of AI systems, providing both the expertise, guidance and tools needed for successful deployment.
+
+## 🚀 Key Features
+
+- **Edge AI Implementation** - Custom solutions for institutions
+- **Training Programs** - Comprehensive training for staff and researchers
+- **System Architecture** - Design and optimization services
+- **Performance Tuning** - Maximize resource utilization 
+
+## 💻 Tech Stack for the website
+
+- FastHTML for web framework
+- Python 3.11+
+- Rust for data engineering
+- GitHub Pages for hosting
+- Edge AI technologies
+
+## 🛠️ Local Development
+
+1. **Clone the repository**
 ```bash
-# On macOS
-brew install pyenv
-
-# On Linux
-curl https://pyenv.run | bash
+git clone https://github.com/Ferocious-0xide/ferociouslabs.github.io.git
+cd ferociouslabs.github.io
 ```
 
-2. Add pyenv to your shell configuration:
+2. **Set up Python environment**
 ```bash
-# Add to ~/.bashrc or ~/.zshrc
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-```
-
-3. Install Python and set up the project:
-```bash
-# Install Python 3.11.5
-pyenv install 3.11.5
-
-# Create project directory
-mkdir ferociouslabs
-cd ferociouslabs
-
-# Set local Python version
 pyenv local 3.11.5
-
-# Create virtual environment
-python -m venv venv
-
-# Activate virtual environment
-source venv/bin/activate  # On Unix/macOS
+python -m venv .venv
+source .venv/bin/activate  # On Unix/macOS
 # OR
-.\venv\Scripts\activate  # On Windows
-
-# Install dependencies
-pip install python-fasthtml
-pip freeze > requirements.txt
+.\.venv\Scripts\activate  # On Windows
 ```
 
-4. Set up Git repository:
+3. **Install dependencies**
 ```bash
-git init
-git add .
-git commit -m "Initial commit"
+pip install -r requirements.txt
 ```
 
-## GitHub Pages Setup
-
-1. Create a new repository on GitHub named `ferociouslabs.github.io`
-
-2. Push your local repository:
-```bash
-git remote add origin git@github.com:yourusername/ferociouslabs.github.io.git
-git branch -M main
-git push -u origin main
-```
-
-3. In GitHub repository settings:
-   - Go to "Pages"
-   - Set branch to "main"
-   - Save
-
-## Development
-
-1. Activate virtual environment:
-```bash
-source venv/bin/activate  # On Unix/macOS
-# OR
-.\venv\Scripts\activate  # On Windows
-```
-
-2. Run the development server:
+4. **Run the development server**
 ```bash
 python main.py
 ```
 
-3. Visit `http://localhost:8000` in your browser
-
-## Deployment
-
-Using GitHub Pages, which only serves static content
-1. Generate static HTML from the FastHTML application
-2. Commit and push the static files to the repository
-
-Use the following command to build the static site:
+5. **Build static site**
 ```bash
-python build.py  # We'll create this script to generate static HTML
+python build.py
 ```
 
-## Images and Assets
+## 📁 Project Structure
 
-Store images in the `static/images/` directory. Reference them in the FastHTML application like this:
-```python
-Img(src="/static/images/your-image.png", alt="Description")
 ```
-
-## Contributing
-
-1. Create a new branch for feature
-2. Make changes
-3. Test locally
-4. Submit a pull request
-
-## License
-
-MIT License - See LICENSE file for details
+ferociouslabs/
+├── main.py           # FastHTML application
+├

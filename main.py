@@ -37,13 +37,15 @@ def footer():
                 style="text-align: right;"
             ),
             cls="container",
-            style="display: flex; justify-content: space-between; align-items: start; padding: 1rem;"
+            style="display: flex; justify-content: space-between; align-items: start; padding: 1rem 0;"
         ),
-        P("© 2025 Ferocious Labs - Built with FastHTML", 
-          cls="text-center",
-          style="margin-top: 1rem; border-top: 1px solid #eee; padding-top: 1rem;"),
+        Div(
+            P("© 2025 Ferocious Labs - Built with FastHTML"),
+            cls="container",
+            style="display: flex; justify-content: center; margin-top: 1rem;"
+        ),
         cls="footer",
-        style="width: 100%; padding: 2rem 0;"
+        style="width: 100%; padding: 1rem 0; border: none;"
     )
 
 @app.get("/")

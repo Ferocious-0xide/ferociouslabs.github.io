@@ -61,5 +61,10 @@ python build.py
 
 ```
 ferociouslabs/
-├── main.py           # FastHTML application
-├
+├── .venv/              # Your virtual environment
+├── main.py            # Your FastHTML application
+├── build.py           # The build script
+├── .gitignore         # Git ignore file (if you have it)
+├── README.md          # README file (if you have it)
+└── static/            # Static assets directory
+    └── images/        # Images directory
